@@ -9,7 +9,7 @@
     "serve": "node dist/index.js",
     "test": "mocha --compilers js:babel-register"
   },
-  "author": "James Kyle <me@thejameskyle.com>",
+  "author": "Mohammad Sharifi <mmdsharifi@yahoo.com>",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.3.15",
@@ -18,5 +18,8 @@
     "babel-register": "^6.3.13",
     "mocha": "^2.3.4",
     "nodemon": "^1.8.1"
+  },
+  "dependencies": {
+    "mongorito": "^2.1.2"
   }
 }
