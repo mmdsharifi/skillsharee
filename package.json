@@ -1,7 +1,7 @@
 {
-  "name": "example-node-server",
+  "name": "SkillSharee",
   "version": "1.0.0",
-  "description": "Example Node Server w/ Babel",
+  "description": "simple social API network with NodeJS , MongoDB",
   "main": "lib/index.js",
   "scripts": {
     "start": "nodemon lib/index.js --exec babel-node --presets es2015,stage-2",
@@ -20,6 +20,6 @@
     "nodemon": "^1.8.1"
   },
   "dependencies": {
-    "mongorito": "^2.1.2"
+    "mongoose": "^4.5.3"
   }
 }
