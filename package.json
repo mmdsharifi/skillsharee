@@ -23,6 +23,7 @@
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
+    "express-restify-mongoose": "^4.0.2",
     "mongoose": "^4.5.3",
     "passport": "^0.3.2",
     "passport-http": "^0.3.0"
