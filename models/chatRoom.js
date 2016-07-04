@@ -8,8 +8,9 @@ var ChatRoom = new mongoose.Schema({
     pageTitle: String,
     pageDescription: String,
     image: [{
-      Kind, URL
+      Kind: String,
+      url: String
     }]
 });
 
-module.exports = mongoose.model("ChatRoom", TagSchema);
+module.exports = mongoose.model("ChatRoom", ChatRoom);

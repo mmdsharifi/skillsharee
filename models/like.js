@@ -4,8 +4,8 @@ var LikeSchema = new mongoose.Schema({
     likeBy: [{
       type: mongoose.Schema.Types.ObjectId,
       ref: 'User'
-    }]
+    }],
     score: Number
 });
 
-module.exports = mongoose.model("Like", TagSchema);
+module.exports = mongoose.model("Like", LikeSchema);

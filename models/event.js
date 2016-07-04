@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-var Event = new mongoose.Schema({
+var EventSchema = new mongoose.Schema({
     pagePost: [{
       type: mongoose.Schema.Types.ObjectId,
       ref: 'Post'
@@ -9,4 +9,4 @@ var Event = new mongoose.Schema({
     time: String
 });
 
-module.exports = mongoose.model("Event", TagSchema);
+module.exports = mongoose.model("Event", EventSchema);

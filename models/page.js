@@ -16,8 +16,9 @@ var PageSchema = new mongoose.Schema({
     pageTitle: String,
     pageDescription: String,
     image: [{
-      Kind, URL
+      Kind: String,
+     url: String
     }]
 });
 
-module.exports = mongoose.model("Page", TagSchema);
+module.exports = mongoose.model("Page", PageSchema);

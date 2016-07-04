@@ -9,4 +9,4 @@ var RoleSchema = new mongoose.Schema({
     displayName: String
 });
 
-module.exports = mongoose.model("Role", TagSchema);
+module.exports = mongoose.model("Role", RoleSchema);

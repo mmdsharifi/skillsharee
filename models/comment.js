@@ -12,4 +12,4 @@ var CommentSchema = new mongoose.Schema({
     count: Number
 });
 
-module.exports = mongoose.model("Comment", TagSchema);
+module.exports = mongoose.model("Comment", CommentSchema);
