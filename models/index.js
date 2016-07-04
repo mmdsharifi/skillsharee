@@ -28,12 +28,12 @@ router.get('/', (req, res) => {
 
 router.route('/user')
   .post(userController.postUsers)
-  .get(authController.isAuthenticated, userController.getUsers);
+  .get(userController.getUsers);
 
 router.route('/users/:user_id')
-  .get(authController.isAuthenticated, userController.getUser)
-  .put(authController.isAuthenticated, userController.putUser)
-  .delete(authController.isAuthenticated, userController.deleteUser)
+  .get(userController.getUser)
+  .put(userController.putUser)
+  .delete(userController.deleteUser)
 
 app.use('/api', router);
 app.listen(port);
