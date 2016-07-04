@@ -2,9 +2,9 @@
   "name": "SkillSharee",
   "version": "1.0.0",
   "description": "simple social API network with NodeJS , MongoDB",
-  "main": "lib/index.js",
+  "main": "models/index.js",
   "scripts": {
-    "start": "nodemon lib/index.js --exec babel-node --presets es2015,stage-2",
+    "start": "nodemon models/index.js --exec babel-node --presets es2015,stage-2",
     "build": "babel lib -d dist",
     "serve": "node dist/index.js",
     "test": "mocha --compilers js:babel-register"
@@ -20,8 +20,11 @@
     "nodemon": "^1.8.1"
   },
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
-    "mongoose": "^4.5.3"
+    "mongoose": "^4.5.3",
+    "passport": "^0.3.2",
+    "passport-http": "^0.3.0"
   }
 }
