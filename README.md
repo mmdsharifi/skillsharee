@@ -23,3 +23,14 @@ try `npm install` after that `npm start` and enjoy! :smile:
 - [Mongoose](mongoosejs.com) : elegant mongodb object modeling for node.js
 - [Passport](passportjs.org/) : Passport is authentication middleware for Node.js
 - [bcrypt-nodejs](https://www.npmjs.com/package/bcrypt-nodejs) : A native JS bcrypt library for NodeJS.(for hash and salt password)
+- [express-restify-mongoose](https://florianholzapfel.github.io/express-restify-mongoose/) : Easily create a flexible REST interface for mongoose models
+
+### Import/Export in MongoDB
+Export (csv)
+```
+mongoexport --db skillsharee --collection users --type=csv --fields name,email,password --out /opt/backups/users.csv
+```
+Import (csv)
+```
+mongoimport --db skillsharee --collection users --type csv --headerline --file /opt/backups/users.csv
+```
