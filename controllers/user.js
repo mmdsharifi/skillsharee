@@ -9,6 +9,10 @@ export class UserController {
     user.name = req.body.name;
     user.email = req.body.email;
     user.password = req.body.password;
+    user.image.concat(req.body.image);
+    user.friends.concat(req.body.friends);
+    user.userPosts.concat(req.body.userPosts);
+    user.userRole.concat(req.body.userRole);
 
     user.save((err) => {
       if (err)
@@ -44,6 +48,18 @@ export class UserController {
         user.name = (req.body.name != '') ? req.body.name : user.name;
         user.email = (req.body.email != '') ? req.body.email : user.email;
         user.password = (req.body.password != '') ? req.body.password : user.password;
+        if (req.body.image != null) {
+          user.image.concat(req.body.image);
+        }
+        if (req.body.friends != null) {
+          user.friends.concat(req.body.friends);
+        }
+        if (req.body.userPosts != null) {
+          user.userPosts.concat(req.body.userPosts);
+        }
+        if (req.body.userRole != null) {
+          user.userRole.concat(req.body.userRole);
+        }
 
         user.save((err) => {
           if (err) {
@@ -63,5 +79,4 @@ export class UserController {
         res.json({ message: 'User Removed from DB', data: user });
       });
     }
-
 }
